@@ -39,15 +39,9 @@ into the {body} of the default.hbs template --}}
                     <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute='true'}}" class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Facebook">
                       <span class="icon-facebook"></span>
                     </a>
-                    <a href="https://twitter.com/intent/tweet?text={{encode title}}&url={{url absolute='true'}}" class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Twitter">
+                       <a href="https://twitter.com/intent/tweet?text=@tresgthedev is creating a brand new Indie Blog to help Indie Hackers Build and Learn! He's only 13! I just read {encode title}}&url={{url absolute='true'}}! " class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Twitter">
                       <span class="icon-twitter"></span>
-                    </a>
-                    <button class="m-icon-button filled in-share progress js-scrolltop" aria-label="Scroll to top">
-                      <span class="icon-arrow-top"></span>
-                      <svg>
-                        <circle class="progress-ring__circle js-progress" fill="transparent" r="0" />
-                      </svg>
-                    </button>
+                    </a> 
                   </div>
                 </div>
                 {{content}}
@@ -73,7 +67,7 @@ into the {body} of the default.hbs template --}}
                             input_class="m-input in-subscribe-section"
                             button_id="subscribe_button"
                             button_class="m-button primary block"
-                            placeholder=(t "Your email address")
+                            placeholder=(t "Your Email Please")
                           }}
                   </div>
                 </div>
@@ -87,7 +81,7 @@ into the {body} of the default.hbs template --}}
                   <div class="m-subscribe-section__text">
                     <h4 class="m-subscribe-section__title">{{t "Subscribe to our newsletter"}}</h4>
                     <p class="m-subscribe-section__description">
-                      {{t "Get the latest posts delivered right to your inbox."}}
+                      {{t "Indie Stories from Indie Hackers Around the World. Sent to you Weekly "}}
                     </p>
                   </div>
                   <div class="m-subscribe-section__form">
