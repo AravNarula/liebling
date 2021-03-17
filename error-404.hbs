@@ -14,6 +14,15 @@ into the {body} of the default.hbs template --}}
     <h1 class="m-404-title"> 404</h1>
     <p class="m-404-subtitle">The post might not be pubilshed or does not exist.</p>
     <p class="m-404-text"> {{t "Unfortunately the page you were looking for could not be found."}} </p>  You can read other posts <a href="https://makersrocket.com/?ref=404page"> <div style="color:blue;">here</a> </div> 
-    </p>
+  <div class="content-area">
+    <main class="site-main">
+        <div class="post-feed container medium">
+            {{#foreach posts}}
+                {{> "loop"}}
+            {{/foreach}}
+        </div>
+        {{pagination}}
+    </main>
+</div>  </p>
   </section>
 </main>
