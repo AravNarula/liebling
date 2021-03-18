@@ -19,7 +19,7 @@ into the {body} of the default.hbs template --}}
         {{else}}
           <div class="m-hero-avatar" style="background-image: url({{asset "images/default-avatar-square-normal.jpg"}});"></div>
         {{/if}}
-        <h1 class="m-hero-title">{{name}}</h1>
+        <h1 class="m-hero-title">Arav Narule</h1>
         {{#if bio}}
           <p class="m-hero-description">{{bio}}</p>
         {{/if}}
@@ -28,18 +28,11 @@ into the {body} of the default.hbs template --}}
             <ul class="m-hero-social">
               {{#if website}}
                 <li>
-                  <a href="{{website}}" target="_blank" rel="noopener" aria-label="Website">
+                  <a href="indiestories.org" target="_blank" rel="noopener" aria-label="Website">
                     <span class="icon-globe"></span>
                   </a>
                 </li>
-              {{/if}}
-              {{#if facebook}}
-                <li>
-                  <a href="https://facebook.com/{{facebook}}" target="_blank" rel="noopener" aria-label="Facebook">
-                    <span class="icon-facebook"></span>
-                  </a>
-                </li>
-              {{/if}}
+              {{/if}
               {{#if twitter}}
                 <li>
                   <a href="https://twitter.com/{{twitter}}" target="_blank" rel="noopener" aria-label="Twitter">
