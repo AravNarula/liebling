@@ -1,8 +1,8 @@
 {
   "author": {
-    "email": "this.eduardo@gmail.com", "arav.1tb@gmail.com",
-    "name": "Eduardo Gómez", "Arav Narula",
-    "url": "https://eduardogomez.io", "https://makersrocket.com",
+    "email": "this.eduardo@gmail.com", "arav.1tb@gmail.com"
+    "name": "Eduardo Gómez", "Arav Narula"
+    "url": "https://eduardogomez.io", "https://makersrocket.com"
   },
   "config": {
     "posts_per_page": 10,
