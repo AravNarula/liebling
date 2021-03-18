@@ -20,7 +20,7 @@ into the {body} of the default.hbs template --}}
         <header class="m-heading in-subscribe-page">
           <h1 class="m-heading__title">{{t "Subscribe to"}} {{@site.title}}</h1>
           <p class="m-heading__description in-subscribe-page">
-            {{t "Stories from Indie Hackers Around the world to help you Build and Learn"}}
+            {{t "Join the Makers Rocket community. Interviews and Content Weekly or Daily for you."}}
           </p>
         </header>
         {{subscribe_form
@@ -39,10 +39,10 @@ into the {body} of the default.hbs template --}}
         <header class="m-heading in-subscribe-page">
           <h1 class="m-heading__title">{{t "Subscribed!"}}</h1>
           <p class="m-heading__description in-subscribe-page">
-            {{t "You've successfully subscribed to"}} <strong>{{@site.title}}</strong> {{t "with the email address"}} <strong>{{email}}</strong>
+    Thank you for joining {{email}}! You should get a login link, and We'll send you a email later! 
           </p>
         </header>
-        <a href="{{@site.url}}" class="m-button outlined">{{t "Back to home"}}</a>
+        <a href="{{@site.url}}" class="m-button outlined">{{t "View other Posts"}}</a>
       </div>
     {{/if}}
   </section>
