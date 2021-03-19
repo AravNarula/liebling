@@ -21,7 +21,6 @@ taxonomies:
   tag: /tag/{slug}/
   author: /author/{slug}/
 
-podcast:
-template: index.hbs
-data: page.account
-podcasts: /podcast/{slug}/
+/podcast:
+template: index
+ permalink: /{slug}/
