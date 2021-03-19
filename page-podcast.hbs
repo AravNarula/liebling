@@ -10,7 +10,27 @@ into the {body} of the default.hbs template --}}
   <a href="{{@site.url}}" class="m-back">
     <span class="m-back__icon icon-arrow-left"></span>
     <span>{{t "Back to home"}}</span>
-  </a>
+  </a>div class="main-wrap">
+  {{!-- Everything inside the #tag tags pulls data from the tag --}}
+  {{#tag}}
+  
+    <div class="m-hero__content" data-aos="fade-down">
+      <h1 class="m-hero-title bigger">{{name}}</h1>
+      {{#if description}}
+        <p class="m-hero-description">
+          {{description}}
+        </p>
+      {{/if}}
+      <div class="m-hero__meta">
+        <ul class="m-hero-stats">
+          <li>
+            {{plural ../pagination.total empty=(t "No posts") singular=(t "1 post") plural=(t "% posts")}} {{t "with this tag"}}
+          </li>
+        </ul>
+      </div>
+    </div>
+    </section>
+  {{/tag}}
 </div>
     <div>
       <header class="m-heading in-subscribe-page">
