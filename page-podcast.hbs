@@ -15,9 +15,20 @@ into the {body} of the default.hbs template --}}
     <div>
       <header class="m-heading in-subscribe-page">
         <h1 class="m-heading__title"> The Indie Cast </h1>
-        <p class="m-heading__description in-subscribe-page">
-      The Indie Podcast is Our Offical Podcast! We interview Indie Hackers, and Ask them about themsleves, and Something they're really passionate about.  <br>
-      you can view the podcast <div style="color:blue";> <a href="twitter.com/theindiecastfm"> Here! </a> </div>
+       <main>
+    <div class="l-content">
+      <div class="l-wrapper" data-aos="fade-up" data-aos-delay="300">
+        <div class="l-grid centered">
+          {{!-- The tag below iterates over all the posts --}}
+          {{> "loop"}}
+        </div>
+      </div>
+      {{!-- Links to Previous/Next posts --}}
+      {{pagination}}
+    </div>
+  </main>
+</div>
+    
         </p>
       </header
     </div>
