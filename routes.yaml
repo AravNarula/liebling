@@ -23,4 +23,4 @@ taxonomies:
 
 /podcast:
 template: index
- permalink: /{slug}/
+ permalink: podcast/{slug}/
